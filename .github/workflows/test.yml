@@ -33,6 +33,7 @@ jobs:
 
     - name: Run Pytest and produce JUnit XML
       run: |
+          source venv/bin/activate
           pytest --junitxml=test-results.xml
           
     - name: Upload test results artifact
